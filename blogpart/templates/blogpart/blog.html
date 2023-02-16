@@ -1,0 +1,29 @@
+
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}Blog{% endblock %}
+
+
+{% block content %}
+{% for el in publications %}
+
+<div class="container">
+  <div class="flipper">
+    <div class="front">
+      <div class="header">
+<!--        <i class="fa fa-creative-commons fa-2x"></i>-->
+        <br>
+        <h3>{{ el.title }}</h3>
+      </div>
+      <p>{{ el.date }}</p>
+      </div>
+      <div class="back"><a href="{% url 'blog_detail' el.id %}"><p>{{ el.anons }}</p></a>
+<!--        <a href="{% url 'blog_detail' el.id %}" class = "back"><p>{{ el.anons }}</p></a>-->
+<!--      <p>{{ el.anons }}</p>-->
+      </div>
+ </div>
+</div>
+
+{% endfor %}
+{% endblock %}

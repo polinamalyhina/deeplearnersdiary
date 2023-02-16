@@ -1,0 +1,214 @@
+body{
+    background: #252525;
+    background-image: url("../img/ice.jpg");
+}
+
+header {
+    /*font-size: 200%;*/
+    padding: 120px; /* Поля */
+    /*color: #e9e9e9; !* Цвет текста *!*/
+    /*background: #202020; !* Цвет фона *!*/
+    background-image: url("../img/wallpaper.jpg");
+   }
+.headertext {
+    margin-top: -50px;
+    margin-bottom: -100px;
+    color: #e9e9e9;
+    font-size: 400%;
+
+}
+nav {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    /*padding: 10px; !* Поля *!*/
+    color: #e9e9e9; /* Цвет текста */
+    background: #141414; /* Цвет фона */
+    position: sticky; /* Липкое позиционирование */
+    top: 0; /* Положение сверху */
+   }
+
+h2 {
+    display: inline-block;
+    margin-left: 10%;
+    color: #feb386;
+    /*text-decoration: none;*/
+    font-size: 17px;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  transition: color .2s;
+}
+/*@import url('https://fonts.googleapis.com/css?family=Arimo');*/
+.top-menu {
+  background: #141414;
+  /*box-shadow: 3px 0 7px rgba(0,0,0,.3);*/
+  padding: 20px;
+}
+.top-menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbar-logo {display: inline-block;
+    margin-top: -10px;
+    margin-bottom: -20px;
+    margin-left: 10%;
+    size: auto;
+    transition: filter .7s ease-in-out;
+  -webkit-filter: grayscale(99%);
+  filter: grayscale(99%);
+}
+
+.navbar-logo:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a.current, .menu-main a:hover{color: #feb386;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #feb386;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px;
+  margin: 0 30px;
+}
+}
+
+
+.footer #block{
+position:relative;
+margin-top:2px;
+width:100%;
+height:100%;
+background: #feb386;
+}
+
+.footer #text{
+    Position: relative;
+    right:80px;
+    width:100px;
+    margin:8px auto;
+    top:-51px;
+    font-size: 5px;
+}
+
+.footer1{
+    float:left;
+    width:700px;
+    margin-left: -200px;
+    }
+
+.footer h1{
+   color: #252525;
+   margin-top:77px;
+   /*margin-left:20px;*/
+}
+
+.footer #knopka{
+    width:50px;
+    height:50px;
+    border: #feb386 8px;
+    /*margin:-3 auto;*/
+    position:center;
+
+}
+.footer #knopka:hover{
+    width:50px;
+    height:50px;
+    border: #feb386 8px;
+}
+.footer {
+    position: fixed;
+    right:0;
+    bottom:0;
+    width: 100%;
+    height: 2em;
+    overflow:hidden;
+    transition: all 1s ease;
+
+}
+.footer:hover {
+    transition: all 1s ease;
+    height: 9em;
+}
+
+
+blockquote {
+     border-radius: 10px;
+margin: 50px;
+background: #D8D8DD;
+color: #141414;
+padding: 30px 30px 30px 90px;
+/*position: relative;*/
+font-family: 'Ubuntu Condensed', sans-serif;
+  /*  transition: filter .5s ease-in-out;*/
+  /*-webkit-filter: grayscale(100%);*/
+  /*filter: grayscale(100%)*/
+}
+/*blockquote:hover {*/
+/*  -webkit-filter: grayscale(0%);*/
+/*  filter: grayscale(0%);*/
+/*}*/
+
+blockquote p {
+margin-top: 0;
+font-size: 24px;
+font-weight: 300;
+    color: #2F383B;
+  /*      transition: filter .5s ease-in-out;*/
+  /*-webkit-filter: grayscale(100%);*/
+  /*filter: grayscale(100%)*/
+}
+/*blockquote p:hover {*/
+/*     -webkit-filter: grayscale(0%);*/
+/*  filter: grayscale(0%);*/
+/*}*/
+
+blockquote cite {
+font-style: normal;
+text-transform: uppercase;
+    color: #2F383B;
+}
+

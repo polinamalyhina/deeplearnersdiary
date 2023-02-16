@@ -1,0 +1,37 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}ABOUT{% endblock %}
+
+{% block content %}
+
+<div class="container1">
+    <div class="post">
+        <div class="post-image">
+            <img src="{% static 'main/img/mud.png' %}">
+        </div>
+        <div class="post-content">
+            <div class="post-header">
+                <h1>{{ publication.title }}</h1>
+                <div class="post-meta">
+                    <span class ="time">{{ publication.date }}</span>
+<!--                    <br>-->
+                    <span class="category">{{ publication.theme }}</span>
+                </div>
+            </div>
+            <p>{{ publication.full_text_1 }}</p>
+            <p>{{ publication.full_text_2 }}</p>
+            <p>{{ publication.full_text_3 }}</p>
+            <p>{{ publication.full_text_4 }}</p>
+            <p>{{ publication.full_text_5 }}</p>
+            <p>{{ publication.full_text_6 }}</p>
+            <p>{{ publication.full_text_7 }}</p>
+            <p>{{ publication.full_text_8 }}</p>
+            <p>{{ publication.full_text_9 }}</p>
+            <p>{{ publication.full_text_10 }}</p>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

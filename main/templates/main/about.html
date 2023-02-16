@@ -1,0 +1,155 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}CV{% endblock %}
+
+
+
+
+
+
+
+
+{% block style %}
+<style type="text/css">
+   html {
+  --primary-color: #e9e9e9;
+  --secondary-color: #e9e9e9;
+  /*--bg-color: #ffffff;*/
+}
+
+
+* {
+  color: var(--secondary-color);
+}
+
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 0.25em;
+}
+
+h2 {
+  color: var(--secondary-color);
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 1em;
+  margin-left: 0px;
+}
+
+h3 {
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--primary-color);
+}
+
+section {
+
+  margin-bottom: 3em;
+  position: relative;
+}
+
+.cv {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+.experience {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.experience__date {
+  min-width: 185px;
+  margin-bottom: 1em;
+}
+
+.experience__name {
+  font-weight: bold;
+}
+
+@media (max-width: 575px) {
+  .experience {
+    display: block;
+  }
+}
+
+   TD {
+    vertical-align: top; /* Вертикальное выравнивание в ячейках */
+    padding: 5px; /* Поля вокруг ячеек */
+   }
+   TD#leftcol {
+    width: 400px; /* Ширина левой колонки */
+    /*background: #ccc; !* Цвет фона левой колонки *!*/
+   }
+   /*TD#rightcol {*/
+   /* background: #fc3; !* Цвет фона правой колонки *!*/
+   /*}*/
+
+
+  </style>
+{% endblock %}
+
+
+
+
+
+
+
+{% block content %}
+
+<div class="cv">
+    <section>
+      <h1>Polina Malygina</h1>
+      <h2>Python developer</h2>
+
+      <div class="description">
+        Reliable team member with a problem solving mindset seeking for a Trainee Python Developer position. Offering
+excellent communication and good critical thinking. Willing to deepen knowledge, participate in new interesting
+projects and gain tremendous experience. Motivated to learn, grow and excel in back-end developing.
+      </div>
+    </section>
+
+    <section>
+      <table cellspacing="0" id="maket">
+   <tr>
+    <td id="leftcol">
+      <h3>Technical Profile</h3>
+      <div>
+        <ul>
+              <li> Django</li>
+              <li> Python</li>
+              <li> Unittests experience</li>
+              <li> SQLight/MySQL/PostgreSQL</li>
+              <li>HTML/CSS</li>
+              <li> MATLAB/C++ experience</li>
+              <li> Microsoft Office/Google Drive</li>
+            </ul>
+      </div>
+    </td>
+    <td id="rightcol">
+      <h3>Education</h3>
+
+      <div class="experience">
+        <div class="experience__date">2022-04 - 2022-08</div>
+        <div class="experience__description">
+          <div class="experience__name">Python Developing</div>
+          <div class="experience__company">Beetroot Academy</div>
+        </div>
+      </div>
+      <div class="experience">
+        <div class="experience__date">2020-09 - 2021-12</div>
+        <div class="experience__description">
+          <div class="experience__name">Master of Science: Electrical Power Industry</div>
+          <div class="experience__company">NTUU "Kyiv Polytechnic University"</div>
+        </div>
+      </div>
+    </td>
+   </tr>
+  </table>
+ <a href="{% static 'main/img/Polina_Malygina_CV.pdf' %}" download="" class="sliding-button">Download CV</a>
+{% endblock %}

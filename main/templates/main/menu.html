@@ -1,0 +1,15 @@
+{% load static %}
+
+<header><div class="headertext">DeepLearner's Diary</div></header>
+<nav class="top-menu">
+  <a class="navbar-logo" href="{% url 'main' %}"><img src="{% static 'main/img/sfera1 4.png' %}" alt="Logo"></a>
+<!--  <h2>Polina Malygina</h2>-->
+  <ul class="menu-main">
+<!--    <li><a href="{% url 'main' %}">Main</a></li>-->
+    <li><a href="{% url 'blog' %}">Blog</a></li>
+    <li><a href="{% url 'inspiration' %}">Inspiration</a></li>
+    <li><a href="{% url 'about' %}">About</a></li>
+    <li><a href="{% url 'contact_page' %}">Connect</a></li>
+  </ul>
+</nav>
+

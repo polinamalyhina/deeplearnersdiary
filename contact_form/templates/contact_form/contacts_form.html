@@ -1,0 +1,70 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block title %}Connect{% endblock %}
+
+
+
+{% block style %}
+<style type="text/css">
+   #content {
+    width: 500px; /* Ширина слоя */
+    margin: 0 auto 50px; /* Выравнивание по центру */
+   }
+   #footer {
+       text-decoration: none;
+       font-family: 'Ubuntu Condensed', sans-serif;
+       font-size: 15px;
+       height: 150px;
+    position: absolute; /* Фиксированное положение */
+       margin-bottom: -30px;
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: #141414; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+   }
+   a {
+       text-decoration: none;
+       color: #707981;
+   }
+    a:hover{
+        color: #feb386;
+    }
+
+  </style>
+{% endblock %}
+
+
+{% block content %}
+<!--<img class = "dec" src="{% static 'main/img/mud.png' %}">-->
+<form method="POST">
+    {% csrf_token %}
+<form class = "pic">
+<form class="decor">
+<div class="form-left-decoration"></div>
+<div class="form-right-decoration"></div>
+<div class="circle"></div>
+<div class="form-inner">
+<h3>Connect</h3>
+<!--<input type="text" placeholder="Username">-->
+    {{ form.name }}
+<!--<input type="email" placeholder="Email">-->
+    {{ form.email }}
+<!--<textarea placeholder="Message..." rows="3"></textarea>-->
+    {{ form.message }}
+<input type="submit" value="Send">
+</div>
+</form>
+</form>
+</form>
+
+<div id="footer">
+    Polina Malygina <br>
+    email: <a href="mailto:polja.malygina@gmail.com">polja.malygina@gmail.com</a>
+  </div>
+
+
+
+{% endblock %}
+
+
