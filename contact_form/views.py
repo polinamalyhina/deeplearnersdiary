@@ -36,8 +36,8 @@ class ContactCreate(CreateView):
 def email(subject, content):
     send_mail(subject,
               content,
-              'отправитель@gmail.com',
-              ['получатель1@gmail.com']
+              'polja.malygina@gmail.com',
+              ['polja.malygina@gmail.com']
               )
 
 
